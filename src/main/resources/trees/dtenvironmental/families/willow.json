@@ -1,0 +1,7 @@
+{
+  "common_leaves": "dtenvironmental:willow",
+  "common_species": "dtenvironmental:willow",
+  "primitive_log": "environmental:willow_log",
+  "primitive_stripped_log": "environmental:stripped_willow_log",
+  "max_branch_radius": 8
+}

@@ -1,0 +1,19 @@
+{
+  "block.dtenvironmental.cherry_branch": "Cherry Tree",
+  "block.dtenvironmental.willow_branch": "Willow Tree",
+  "block.dtenvironmental.wisteria_branch": "Wisteria Tree",
+
+  "species.dtenvironmental.cherry": "Cherry",
+  "species.dtenvironmental.willow": "Willow",
+  "species.dtenvironmental.pink_wisteria": "Pink Wisteria",
+  "species.dtenvironmental.purple_wisteria": "Purple Wisteria",
+  "species.dtenvironmental.blue_wisteria": "Blue Wisteria",
+  "species.dtenvironmental.white_wisteria": "White Wisteria",
+
+  "item.dtenvironmental.cherry_seed": "Cherry Pit",
+  "item.dtenvironmental.willow_seed": "Willow Catkin",
+  "item.dtenvironmental.pink_wisteria_seed": "Pink Wisteria Pod",
+  "item.dtenvironmental.purple_wisteria_seed": "Purple Wisteria Pod",
+  "item.dtenvironmental.blue_wisteria_seed": "Blue Wisteria Pod",
+  "item.dtenvironmental.white_wisteria_seed": "White Wisteria Pod"
+}

@@ -1,0 +1,7 @@
+{
+  "common_leaves": "dtenvironmental:cherry",
+  "common_species": "dtenvironmental:cherry",
+  "primitive_log": "environmental:cherry_log",
+  "primitive_stripped_log": "environmental:stripped_cherry_log",
+  "max_branch_radius": 8
+}

@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "environmental:block/wisteria_log",
+    "rings": "environmental:block/wisteria_log_top"
+  }
+}

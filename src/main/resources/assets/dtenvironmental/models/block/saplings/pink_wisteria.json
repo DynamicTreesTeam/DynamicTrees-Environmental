@@ -1,0 +1,8 @@
+{
+	"parent": "dynamictrees:block/smartmodel/sapling",
+	"textures": {
+		"particle": "environmental:block/pink_wisteria_flowers",
+		"log": "environmental:block/wisteria_log",
+		"leaves": "environmental:block/pink_wisteria_flowers"
+	}
+}

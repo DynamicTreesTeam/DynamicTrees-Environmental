@@ -1,0 +1,6 @@
+{
+    "parent":"dynamictrees:item/standard_seed",
+    "textures": {
+        "layer0":"dtenvironmental:item/pink_wisteria_seed"
+    }
+}

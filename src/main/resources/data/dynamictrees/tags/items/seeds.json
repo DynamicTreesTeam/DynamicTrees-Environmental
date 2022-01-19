@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "dtupgradeaquatic:mulberry_seed"
+    "dtenvironmental:blue_wisteria_seed",
+    "dtenvironmental:cherry_seed",
+    "dtenvironmental:pink_wisteria_seed",
+    "dtenvironmental:purple_wisteria_seed",
+    "dtenvironmental:white_wisteria_seed",
+    "dtenvironmental:willow_seed"
   ]
 }

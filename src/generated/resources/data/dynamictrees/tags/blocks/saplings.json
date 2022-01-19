@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "dtupgradeaquatic:mulberry_sapling"
+    "dtenvironmental:blue_wisteria_sapling",
+    "dtenvironmental:cherry_sapling",
+    "dtenvironmental:pink_wisteria_sapling",
+    "dtenvironmental:purple_wisteria_sapling",
+    "dtenvironmental:white_wisteria_sapling",
+    "dtenvironmental:willow_sapling"
   ]
 }

@@ -1,51 +1,51 @@
 modLoader="javafml"
 loaderVersion="[36,)"
 license="MIT"
-issueTrackerURL="https://github.com/DynamicTreesTeam/DynamicTrees-UpgradeAquatic/issues"
+issueTrackerURL="https://github.com/DynamicTreesTeam/DynamicTrees-Environmental/issues"
 
 [[mods]]
-modId="dtupgradeaquatic"
+modId="dtenvironmental"
 version="${file.jarVersion}"
-displayName="Dynamic Trees for Upgrade Aquatic"
+displayName="Dynamic Trees for Environmental"
 
-updateJSONURL="https://github.com/DynamicTreesTeam/DynamicTreesVersionInfo/blob/master/Add-ons/UpgradeAquatic.json?raw=true"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-upgrade-aquatic"
+updateJSONURL="https://github.com/DynamicTreesTeam/DynamicTreesVersionInfo/blob/master/Add-ons/Environmental.json?raw=true"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-environmental"
 
 authors="Max Hyper"
 description='''
-Compatibility Mod between Dynamic trees and Upgrade Aquatic
+Compatibility Mod between Dynamic trees and Environmental
 '''
-[[dependencies.dtupgradeaquatic]]
+[[dependencies.dtenvironmental]]
     modId="forge"
     mandatory=true
     versionRange="[36.2.20,37)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.dtupgradeaquatic]]
+[[dependencies.dtenvironmental]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5,1.17)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.dtupgradeaquatic]]
+[[dependencies.dtenvironmental]]
     modId="dynamictrees"
     mandatory=true
     versionRange="[0.10.0,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.dtupgradeaquatic]]
+[[dependencies.dtenvironmental]]
     modId="dynamictreesplus"
     mandatory=false
     versionRange="[0.1.0,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.dtupgradeaquatic]]
-    modId="upgrade_aquatic"
+[[dependencies.dtenvironmental]]
+    modId="environmental"
     mandatory=true
-    versionRange="[3.1.2,)"
+    versionRange="[1.1.1,)"
     ordering="AFTER"
     side="BOTH"

@@ -1,0 +1,7 @@
+{
+  "common_leaves": "dtenvironmental:pink_wisteria",
+  "common_species": "dtenvironmental:pink_wisteria",
+  "primitive_log": "environmental:wisteria_log",
+  "primitive_stripped_log": "environmental:stripped_wisteria_log",
+  "max_branch_radius": 8
+}

@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "dtupgradeaquatic:river_leaves"
+    "dtenvironmental:blue_wisteria_leaves",
+    "dtenvironmental:cherry_leaves",
+    "dtenvironmental:pink_wisteria_leaves",
+    "dtenvironmental:purple_wisteria_leaves",
+    "dtenvironmental:white_wisteria_leaves",
+    "dtenvironmental:willow_leaves"
   ]
 }
