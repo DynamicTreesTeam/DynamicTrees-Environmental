@@ -1,7 +1,14 @@
 package maxhyper.dtenvironmental;
 
 import com.ferreusveritas.dynamictrees.api.cells.CellKit;
+import com.ferreusveritas.dynamictrees.api.worldgen.BiomePropertySelectors;
+import com.ferreusveritas.dynamictrees.api.worldgen.FeatureCanceller;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.registry.WorldGenRegistries;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -37,6 +44,25 @@ public class DTEnvironmentalRegistries {
     @SubscribeEvent
     public static void onCellKitRegistry(final com.ferreusveritas.dynamictrees.api.registry.RegistryEvent<CellKit> event) {
 //        DTUpgradeAquaticCellKits.register(event.getRegistry());
-    }
 
+    }
+    public static final FeatureCanceller FRUIT_TREES_CANCELLER = new FeatureCanceller(new ResourceLocation(DynamicTreesEnvironmental.MOD_ID, "entree")) {
+        @Override
+        public boolean shouldCancel(ConfiguredFeature<?, ?> configuredFeature, BiomePropertySelectors.FeatureCancellations featureCancellations) {
+            // Note it not in ForgeRegistries.FEATURES
+            final ResourceLocation featureName = WorldGenRegistries.CONFIGURED_FEATURE.getKey(configuredFeature);
+            if (featureName == null) {
+                return false;
+            }
+            DynamicTreesEnvironmental.LOGGER.debug(((WorldGenRegistries.CONFIGURED_FEATURE.getKey(configuredFeature) + "").startsWith("atmospheric:yucca_tree")) + "" + featureName);
+            return featureCancellations.shouldCancelNamespace(featureName.getNamespace())
+                    && ((WorldGenRegistries.CONFIGURED_FEATURE.getKey(configuredFeature) + "").startsWith("environmental:birch"));
+        }
+
+    };
+
+    @SubscribeEvent
+    public static void onFeatureCancellerRegistry(final com.ferreusveritas.dynamictrees.api.registry.RegistryEvent<FeatureCanceller> event) {
+        event.getRegistry().registerAll(FRUIT_TREES_CANCELLER);
+    }
 }

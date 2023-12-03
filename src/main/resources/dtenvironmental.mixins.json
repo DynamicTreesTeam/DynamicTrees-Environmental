@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "maxhyper.dtenvironmental.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "dtenvironmental.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

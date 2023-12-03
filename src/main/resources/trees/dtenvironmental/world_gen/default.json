@@ -1,0 +1,103 @@
+[
+  {
+    "__comment": "Cancel standard tree features from the overworld.",
+    "select": {
+      "names_or": ["environmental:.*","minecraft:flower_forest"]
+    },
+    "cancellers": {
+      "types": [
+        "tree","dtenvironmental:entree"
+      ],
+      "namespaces": [
+        "minecraft",
+        "environmental"
+      ]
+    }
+  },
+  {
+    "select": {
+      "name": "environmental:.*marsh.*"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "dynamictrees:swamp_oak": 1
+        }
+      },
+      "density": [
+        0.05
+      ],
+      "chance": 0.25,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": {
+      "names": [
+        "environmental:.*blossom.*",
+        "!environmental:blossom_valleys"
+      ]
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "dtenvironmental:cherry": 8,
+          "dynamictrees:birch": 1
+        }
+      },
+      "density": [
+        1.0
+      ],
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": {
+      "name": "environmental:blossom_valleys"
+    },
+    "apply": {
+      "species": {
+        "random": {
+          "dtenvironmental:cherry": 1
+        }
+      },
+      "density": [
+        0.2
+      ],
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": {
+      "type": "swamp"
+    },
+    "apply": {
+      "species": {
+        "method": "splice_before",
+        "random": {
+          "dtenvironmental:willow": 1,
+          "...": 8
+        }
+      }
+    }
+  },
+  {
+    "select": {
+      "name": "minecraft:flower_forest"
+    },
+    "apply": {
+      "species": {
+        "method": "splice_before",
+        "random": {
+          "dtenvironmental:pink_wisteria": 1,
+          "dtenvironmental:purple_wisteria": 1,
+          "dtenvironmental:blue_wisteria": 1,
+          "dtenvironmental:white_wisteria": 1,
+          "...": 8
+        }
+      }
+    }
+  }
+]
