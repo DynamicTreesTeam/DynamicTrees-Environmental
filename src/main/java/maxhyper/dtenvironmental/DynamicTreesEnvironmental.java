@@ -13,13 +13,15 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(DynamicTreesEnvironmental.MOD_ID)
 public class DynamicTreesEnvironmental
 {
     public static final String MOD_ID = "dtenvironmental";
-
+    public static final Logger LOGGER = LogManager.getLogger();
     public DynamicTreesEnvironmental() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         eventBus.addListener(this::commonSetup);
@@ -58,14 +60,16 @@ public class DynamicTreesEnvironmental
     }
 
     public void gatherData(final GatherDataEvent event) {
-        GatherDataHelper.gatherAllData(
-                MOD_ID,
-                event,
-                SoilProperties.REGISTRY,
-                Family.REGISTRY,
-                Species.REGISTRY,
-                LeavesProperties.REGISTRY
-        );;
+        // GatherDataHelper.gatherAllData(
+        //         MOD_ID,
+        //         event,
+        //         SoilProperties.REGISTRY,
+        //         Family.REGISTRY,
+        //         Species.REGISTRY,
+        //         LeavesProperties.REGISTRY
+        // );;
+        GatherDataHelper. gatherTagData(MOD_ID, event);
+        GatherDataHelper.gatherLootData(MOD_ID, event);
     }
 
 }

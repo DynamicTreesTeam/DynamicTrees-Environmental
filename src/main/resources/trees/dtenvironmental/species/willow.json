@@ -4,15 +4,36 @@
   "signal_energy": 12.0,
   "growth_rate": 0.8,
   "leaves_properties": "dtenvironmental:willow",
-  "environment_factors" : {
+  "environment_factors": {
     "cold": 0.75,
     "hot": 0.5,
     "dry": 0.5,
     "forest": 1.05
   },
-  "perfect_biomes": { "types": [ "hills", "overworld" ] },
+  "perfect_biomes": {
+    "types": [
+      "hills",
+      "overworld"
+    ]
+  },
   "primitive_sapling": "environmental:willow_sapling",
-  "features" : [
-    "bee_nest"
+  "features": [
+    "bee_nest",
+    {
+      "name": "vines",
+      "properties": {
+        "fruiting_radius": 5
+      }
+    },
+    {
+      "name": "vines",
+      "properties": {
+        "block": "environmental:hanging_willow_leaves",
+        "max_length": 2,
+        "quantity": 8,
+        "fruiting_radius": 5,
+        "vine_type": "ceiling"
+      }
+    }
   ]
 }
